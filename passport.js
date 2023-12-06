@@ -6,8 +6,8 @@ const LocalStrategy = require("passport-local").Strategy;
 
 //middleware
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-app.use(session({ secret: "key", resave: true, saveUninitialized: true }));
+// app.use(express.urlencoded({ extended: true }));
+// app.use(session({ secret: "key", resave: true, saveUninitialized: true }));
 app.use(passport.initialize());
 app.use(passport.session());
 
